@@ -1,5 +1,4 @@
 {
-
-"jpg" : { "quality": 70 },
+"jpeg" : { "quality": 100 },
 "png" : { "compressionLevel": 7 },
 }
