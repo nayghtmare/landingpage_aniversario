@@ -1,0 +1,54 @@
+@use '../components/variables';
+
+.event {
+    margin: 0 auto;
+    padding: 24px 0;
+    background-image: linear-gradient(variables.$gradientWhite, variables.$gradientBlue);
+
+    .container {
+        display: flex;
+        margin-top: 8px;
+    }
+
+    &__image {
+        max-width: 160px;
+        margin-left: 24px;    
+        margin-bottom: 24px;         
+    }
+
+        &__imageleft {
+        max-width: 160px;
+        margin-right: 24px;     
+        margin-bottom: 24px;        
+    }
+
+
+    &__detail {
+
+        &__title {
+            font-size: 18px;
+            color: #3a4c50;
+            font-weight: bold;
+            
+        }
+
+        &__description {
+            font-size: 14px;
+            color: #3a4c50;
+            line-height: 24px;
+            font-weight: normal;
+            margin-bottom: 24px;
+        }
+    }
+
+    @media (max-width: 640px) {
+        .container {
+        display: block;
+        }
+        
+        &__image, &__imageleft {
+            max-width: 100%;
+            margin: 0 0 16px 0;
+        }
+    }
+}

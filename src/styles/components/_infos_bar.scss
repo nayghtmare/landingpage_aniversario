@@ -1,0 +1,37 @@
+@use '../components/variables';
+
+.infos-bar {
+    padding: 16px 16px;
+        background-color: variables.$gradientWhite;
+        display: flex;
+        justify-content: space-between;
+        border-radius: 4px;
+
+    &__infos {
+        padding: 10px 10px;
+        gap: 40px;
+
+        &__item {
+            font-size: 14px;
+            color: variables.$textColor2;
+
+            b {
+                font-size: 14px;
+                display: block;
+                color: variables.$textColor2;
+            }
+        }
+    }
+        @media (max-width: 640px) {
+            display: block;
+
+            &__infos {
+                display: block;
+                text-align: center;
+
+                &__item {
+                    margin-bottom: 24px;
+                }
+            }
+        }
+}

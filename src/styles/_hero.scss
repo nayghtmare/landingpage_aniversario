@@ -1,7 +1,10 @@
+@use 'components/variables';
+
 .hero {
     width: 100%;
-    height: 515px;
+    height: auto;
     padding-top: 300px;
+    padding-bottom: 30px;
     background-image: url(../images/hero.jpg);
     background-repeat: no-repeat;
     background-size: cover;
@@ -11,31 +14,32 @@
         position: relative;
     }
 
-&__text {
-    margin-top: 64px;
-    margin-bottom: 0px;
-    font-size: 30px;
-    line-height: 56px;
-    color: #FFFFFF;
+&__text {    
+    padding-top: 12px;
+    margin-bottom: 20px;
+    font-size: 25px;
+    color: variables.$textColor;
+    font-weight: bold;
     text-align: center;
 
         &::before  {
+        border-radius: 4px;
         position: absolute;
         top: 0;
         left: 0;
         width: 100%;
         height: 100%;
-        background-color: #FFFFFF;
+        background-color: variables.$gradientWhite;
         content: '';
         opacity: 0.2;
     }
 }
 
-        @media (max-width: 1024px) {
+        @media (max-width: 640px) {
             padding: 40px 0;
         &__text {
             font-size: 26px;
-            line-height: 48px;
+            line-height: 38px;
         }
     }
 
