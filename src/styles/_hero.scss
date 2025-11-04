@@ -1,17 +1,16 @@
 @use 'components/variables';
 
 .hero {
-    width: 100%;
-    height: auto;
-    padding-top: 300px;
+    display: flex;
     padding-bottom: 30px;
-    background-image: url(../images/hero.jpg);
-    background-repeat: no-repeat;
-    background-size: cover;
-    position: relative;
+    flex-direction: column;
+
 
     .container  {
         position: relative;
+         display: flex;
+         padding-bottom: 30px;
+         flex-direction: column;
     }
 
 &__text {    
